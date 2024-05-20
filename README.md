@@ -64,7 +64,7 @@ This package is open-sourced software licensed under the <a href='/https://opens
 ## Contributing
 
 We welcome contributions to enhance this package.
-Please contact us at <a href="mailto:chikanwazuo@gmail.com">Send email</a>
+Please contact us at <a href="mailto:chikanwazuo@gmail.com">chikanwazuo@gmail.com</a>
 
 Thank you for choosing BrightWeb Authentication! If you have any questions or need support,
 please feel free to open an issue on GitHub.
