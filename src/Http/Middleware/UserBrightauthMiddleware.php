@@ -23,7 +23,7 @@ class UserBrightauthMiddleware
         if ($user && $user->role === 'user') {
             return $next($request);
         }
-    return redirect()->to_route('login')->with("error","You are not permited");
+    return redirect()->route('login')->with("error","You are not permited");
 
 }
 }
