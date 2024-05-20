@@ -22,7 +22,7 @@ php artisan migrate:fresh
 
 This package comes with two built-in middleware 'admin' and 'user'.
 
-These middleware can be used to secure different parts of your application based on user roles.
+This middleware can be used to secure different parts of your application based on user roles.
 
 ## Admin Middleware
 

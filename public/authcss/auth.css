@@ -6,7 +6,7 @@
 .brightweb_form {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    max-width: 350px;
     margin: 100px auto;
     background-color: #222222;
     box-shadow: 7px 0px 30px -20px;
@@ -34,6 +34,8 @@
 }
 .brightweb_form label {
     background-color: #333333;
+    color: white;
+    text-align: center;
 }
 .bright_btn {
     padding: 8px;
@@ -44,6 +46,7 @@
     cursor: pointer;
     border-radius: 8px;
     margin: 8px 0px;
+    font-size: 20px;
 }
 
 .lable_error {
@@ -63,4 +66,22 @@
     color: red;
     background-color: #333333;
     text-decoration: none;
+}
+.admin_b_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.admin_b_container h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .brightweb_form {
+        max-width: 320px;
+    }
 }
