@@ -11,18 +11,23 @@ To install the Brightweb Authentication package, simply use composer:
 ## Migration
 
 Make sure to run migration or rerun migration for users table to be updated with role.
+
 php artisan migrate
+
 if you have already done the above messioned use
+
 php artisan migrate:fresh
 
 ## Middleware
 
 This package comes with two built-in middleware 'admin' and 'user'.
+
 These middleware can be used to secure different parts of your application based on user roles.
 
 ## Admin Middleware
 
 To secure your admin pages, use the 'admin' middleware as shown below:
+
 Route::middleware(['web', 'admin'])->group(function () {
 // Your admin routes here
 });
@@ -46,15 +51,21 @@ php artisan vendor:publish --tag=authcss
 ## Authentication URLS
 
 This package provides predifined routes for registration,login and logout:
+
 Register: '/register'
+
 Login: '/login'
+
 Logout: '/logout'
+
 These routes are ready to use out of the box, simplifying the setup process.
 
 ## Conclusion
 
 The Brightweb Authentication package offers a seamless and powerfull solution for managing authentication in your Laravel application.
+
 With easy installation, robust security, middleware, and customizatable views, you can quickly set up a secure and user-frendly authentication system.
+
 Get started today and take your Laravel applications authentication to the next level
 
 ## License
