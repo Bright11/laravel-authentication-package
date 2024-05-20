@@ -22,6 +22,20 @@
         text-decoration: none;
         color: black;
     }
+    .admin_b_container{
+        display: flex;
+        align-items: center;
+        text-align: center;
+       justify-content: center;
+    }
+    .admin_b_container h2{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 20px;
+
+    }
 </style>
 
     <ul class="admin_b_ul">
