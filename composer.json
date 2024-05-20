@@ -1,0 +1,41 @@
+{
+    "name": "brightweb/authentication",
+    "description": "Advanced Laravel 11 authentication package for PHP 8 and above",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Brightweb\\Authentication\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brightweb\\Authentication\\BrightAuthProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Bright C Web"
+        }
+    ],
+
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^11.0"
+    },
+    "keywords": [
+        "laravel",
+        "laravel 11",
+        "authentication",
+        "php 8",
+        "auth",
+        "login",
+        "user management",
+        "oauth",
+        "jwt",
+        "api authentication",
+        "brightweb"
+    ]
+}

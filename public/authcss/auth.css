@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+.brightweb_form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 100px auto;
+    background-color: #222222;
+    box-shadow: 7px 0px 30px -20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.showpassword {
+    text-align: center;
+}
+.brightweb_form input {
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: #333333;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.brightweb_form input:focus {
+    background-color: #333333;
+    border: 1px solid red;
+}
+.brightweb_form input::placeholder {
+    color: white;
+}
+.brightweb_form label {
+    background-color: #333333;
+}
+.bright_btn {
+    padding: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 8px 0px;
+}
+
+.lable_error {
+    color: red;
+}
+.showpassword {
+    background-color: #333333;
+    border-radius: 8px;
+}
+.no_account_b {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.no_account_b a {
+    color: red;
+    background-color: #333333;
+    text-decoration: none;
+}
