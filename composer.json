@@ -1,5 +1,6 @@
 {
     "name": "brightweb/authentication",
+    "version": "1.0.1",
     "description": "Advanced Laravel 11 authentication package for PHP 8 and above",
     "type": "library",
     "license": "MIT",
