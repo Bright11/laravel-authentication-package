@@ -24,6 +24,7 @@
     background-color: #333333;
     font-size: 18px;
     border-radius: 8px;
+    color: white;
 }
 .brightweb_form input:focus {
     background-color: #333333;

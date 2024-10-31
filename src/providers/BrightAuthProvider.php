@@ -2,7 +2,7 @@
 
 // namespace App\Providers;
 
-namespace Brightweb\Authentication;
+namespace Brightweb\Authentication\providers;
 
 use App\Models\User as Authenticatable;
 use Brightweb\Authentication\Http\Middleware\AdminBrightauthMiddleware;

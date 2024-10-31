@@ -1,6 +1,6 @@
 {
     "name": "brightweb/authentication",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "Advanced Laravel 11 authentication package for PHP 8 and above",
     "type": "library",
     "license": "MIT",
@@ -12,16 +12,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Brightweb\\Authentication\\BrightAuthProvider"
+                "Brightweb\\Authentication\\Providers\\BrightAuthProvider"
             ]
         }
     },
     "authors": [
         {
-            "name": "Bright C Web"
+            "name": "Bright C Web",
+            "email": "chikanwazuo@gmail.com"
         }
     ],
-
     "require": {
         "php": "^8.0",
         "laravel/framework": "^11.0"
@@ -38,5 +38,7 @@
         "jwt",
         "api authentication",
         "brightweb"
-    ]
+    ],
+    "minimum-stability": "stable"
+
 }
