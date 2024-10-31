@@ -39,6 +39,9 @@
         "api authentication",
         "brightweb"
     ],
-    "minimum-stability": "stable"
-
+    "minimum-stability": "stable",
+    "support": {
+        "issues": "https://github.com/Bright11/laravel-b-authentication-package/issues",
+        "source": "https://github.com/Bright11/laravel-b-authentication-package"
+    }
 }
