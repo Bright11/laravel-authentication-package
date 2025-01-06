@@ -1,14 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    background-color: var(--bg-color);
 }
+
 .brightweb_form {
     display: flex;
     flex-direction: column;
     max-width: 350px;
     margin: 100px auto;
-    background-color: #222222;
+    background-color: var(--form-bg-color);
     box-shadow: 7px 0px 30px -20px;
     padding: 8px;
     border-radius: 8px;
@@ -21,28 +22,28 @@
     padding: 8px;
     outline: none;
     border: none;
-    background-color: #333333;
+    background-color: var(--form-input-bg-color);
     font-size: 18px;
     border-radius: 8px;
-    color: white;
+    color: var(--form-input-color);
 }
 .brightweb_form input:focus {
-    background-color: #333333;
+      background-color: var(--form-input-bg-color);
     border: 1px solid red;
 }
 .brightweb_form input::placeholder {
-    color: white;
+    color: var(--form-input-color);
 }
 .brightweb_form label {
-    background-color: #333333;
-    color: white;
+    background-color: var(--form-input-bg-color);
+    color: var(--form-input-color);
     text-align: center;
 }
 .bright_btn {
     padding: 8px;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: var(--form-input-bg-color);
+    color: var(--form-input-color);
     font-size: 12px;
     cursor: pointer;
     border-radius: 8px;
@@ -54,18 +55,19 @@
     color: red;
 }
 .showpassword {
-    background-color: #333333;
+      background-color: var(--form-input-bg-color);
     border-radius: 8px;
 }
 .no_account_b {
-    background-color: #333333;
+      background-color: var(--form-input-bg-color);
     border-radius: 8px;
     padding: 5px;
     margin-bottom: 20px;
+    color: var(--form-input-color);
 }
 .no_account_b a {
     color: red;
-    background-color: #333333;
+      background-color: var(--form-input-bg-color);
     text-decoration: none;
 }
 .admin_b_container {
@@ -80,7 +82,9 @@
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
 }
-
+.showpassword {
+    color: var(--form-input-color);
+}
 @media (max-width: 900px) {
     .brightweb_form {
         max-width: 320px;

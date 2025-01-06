@@ -8,6 +8,7 @@ use App\Models\User as Authenticatable;
 use Brightweb\Authentication\Http\Middleware\AdminBrightauthMiddleware;
 use Brightweb\Authentication\Http\Middleware\UserBrightauthMiddleware;
 use Brightweb\Authentication\Models\User;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 
 class BrightAuthProvider extends ServiceProvider
@@ -35,6 +36,7 @@ class BrightAuthProvider extends ServiceProvider
 
 
 
+
         // adding middelware
         $router=$this->app['router'];
         $router->aliasMiddleWare('admin',AdminBrightauthMiddleware::class);
@@ -43,12 +45,21 @@ class BrightAuthProvider extends ServiceProvider
 
         // loading css
     $this->publishes([
-             __DIR__.'/../public/authcss'=>public_path('bauthcss'),
-        ],'authcss');
+             __DIR__.'/../config/brightwebauthconfig.php'=>config_path('brightwebauthconfig.php'),
+        ],'brightwebauthconfig');
+    $publicpath=public_path("vendor/brightwebauth");
+    $packagepublicpath=__DIR__.'/../public';
 
-
-
+    if(!is_link($publicpath)){
+        if(!@symlink($packagepublicpath,$publicpath)){
+            if(!File::exists($publicpath)){
+                File::copyDirectory($packagepublicpath,$publicpath);
+            }
+        }
     }
+
+
+ }
 
 
 

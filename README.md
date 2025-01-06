@@ -42,11 +42,12 @@ Route::middleware(['web', 'user'])->group(function () {
 
 ## Custom Authentication Views
 
-The package includes customizable authentication views that you can publish and modify to your application's design requirements. We call this feature 'authcss'.
+The package includes customizable authentication views that you can publish and modify to your application's design requirements. We call this feature 'brightwebauthconfig'.
+with this, you can change background and text colors in your config/brightwebauthconfig.php after Publishing config files
 
-## Publishing css
+## Publishing config files
 
-php artisan vendor:publish --tag=authcss
+php artisan vendor:publish --tag=brightwebauthconfig
 
 ## Authentication URLS
 
